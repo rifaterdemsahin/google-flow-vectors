@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YouTube Package · Google Flow Vectors</title>
+<style>
+:root{--bg:#0b0d14;--fg:#eef1f8;--mut:#9aa3b8;--card:#141826;--acc:#ffd54a;--acc2:#4fd8ff}
+@media (prefers-color-scheme:light){:root{--bg:#f6f7fb;--fg:#12151f;--mut:#566079;--card:#fff;--acc:#b07a00;--acc2:#006d8f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Inter,system-ui,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px}h2{margin:44px 0 12px;color:var(--acc2)}h3{margin:8px 0 4px}
+.sub{color:var(--mut);max-width:64ch}a{color:var(--acc2)}code{background:var(--card);padding:1px 6px;border-radius:6px}
+.box{background:var(--card);border-radius:14px;padding:16px;margin:10px 0;position:relative}
+.box pre{white-space:pre-wrap;word-wrap:break-word;margin:0;font:inherit}
+.lbl{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:6px}
+button,.btn{background:var(--acc);color:#1a1300;border:0;border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer;text-decoration:none;font-size:14px;display:inline-block}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.thumb{background:var(--card);border-radius:14px;padding:12px}.thumb img{width:100%;border-radius:10px;display:block;aspect-ratio:16/9;object-fit:cover}
+.thumb p{margin:8px 0;font-size:14px;color:var(--mut)}
+video{width:100%;max-width:340px;border-radius:12px;background:#000}
+.top{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:24px;align-items:start}@media(max-width:720px){.top{grid-template-columns:1fr}}
+ul.check li{margin:4px 0}
+</style></head><body><main>
+<p><a href="index.html">← Project page</a> · <a href="https://github.com/rifaterdemsahin/google-flow-vectors">📦 GitHub</a></p>
+<h1>📺 YouTube package</h1>
+<p class="sub">Everything needed to upload the Short: title, description, tags, a pinned comment and three curiosity-trigger thumbnails (generated with fal.ai). Tap <b>Copy</b> to grab any block.</p>
+
+<section class="top">
+  <video src="out/short_1080x1920.mp4" controls playsinline preload="metadata"></video>
+  <div>
+    <p><b>File:</b> <code>out/short_1080x1920.mp4</code> — 1080×1920, 49.5 s, under 60 s, vertical = qualifies as a YouTube Short.</p>
+    <p><a class="btn" href="out/short_1080x1920.mp4" download>⬇️ Download MP4</a></p>
+  </div>
+</section>
+
+<h2>🏷️ Title</h2>
+<div class="box"><div class="row"><div class="lbl">Recommended (72 characters)</div><button data-copy="t1">Copy</button></div>
+<pre id="t1">Pegasus − Wings + Horn = ??? How AI Really Understands Words 🦄 #Shorts</pre></div>
+<div class="box"><div class="row"><div class="lbl">Alternative A</div><button data-copy="t2">Copy</button></div>
+<pre id="t2">AI Doesn't Read Words. It Does This Instead 🤯 #Shorts</pre></div>
+<div class="box"><div class="row"><div class="lbl">Alternative B</div><button data-copy="t3">Copy</button></div>
+<pre id="t3">I Hid Token 9246 In This Video… Can You Find It? #Shorts</pre></div>
+
+<h2>📝 Description</h2>
+<div class="box"><div class="row"><div class="lbl">Paste into the description box</div><button data-copy="desc">Copy</button></div>
+<pre id="desc">How does an AI actually understand words? It doesn't read letters — it turns every concept into a direction arrow on a giant map. That's called a vector. 🧭
+
+🐴 Horse + 🪽 Wings = Pegasus
+🐴 Horse + 🦄 Horn = Unicorn
+🪽 Pegasus − Wings + Horn = Unicorn
+
+To an AI, concept logic is just basic geometry. 📐
+
+👀 Token 9246 is hiding inside this video. Watch twice to spot it!
+
+🚀 Join the Delivery Pilot community (free on Skool):
+https://www.skool.com/delivery-pilot-8938
+
+#Shorts #AI #Vectors #Embeddings #MachineLearning #LLM #ArtificialIntelligence</pre></div>
+
+<h2>🔖 Tags</h2>
+<div class="box"><div class="row"><div class="lbl">Comma-separated, for the Tags field</div><button data-copy="tags">Copy</button></div>
+<pre id="tags">AI explained, vector embeddings, how AI understands words, word embeddings, king minus man plus woman, Pegasus, Unicorn, tokens, LLM explained, machine learning for beginners, AI shorts, Delivery Pilot</pre></div>
+
+<h2>💬 Pinned comment</h2>
+<div class="box"><div class="row"><div class="lbl">Post and pin after upload</div><button data-copy="pin">Copy</button></div>
+<pre id="pin">Did you spot Token 9246? 👀 Tell me which scene it's in — and what should I explain next: how vectors "talk to each other"? 🚀 Join us on Skool: https://www.skool.com/delivery-pilot-8938</pre></div>
+
+<h2>🖼️ Thumbnails (curiosity triggers)</h2>
+<p class="sub">Three different hooks to A/B test. All are 16:9, under YouTube's 2 MB limit, with big readable text. Each one opens a curiosity gap that the video closes.</p>
+<section class="thumbs">
+  <article class="thumb"><img src="assets/thumbnails/thumb1-equation.png" alt="Pegasus minus Wings plus Horn equals question mark">
+    <h3>1 · The unanswered equation</h3><p>“PEGASUS − WINGS + HORN = ?” The brain wants to finish the sum. Best for people who like puzzles.</p>
+    <a class="btn" href="assets/thumbnails/thumb1-equation.png" download>⬇️ Download</a></article>
+  <article class="thumb"><img src="assets/thumbnails/thumb2-token9246.png" alt="What is hiding inside the unicorn horn, token 9246">
+    <h3>2 · The hidden secret</h3><p>Red circle on “9246” inside the horn. Promises an Easter egg, which drives rewatches. Strongest on curiosity.</p>
+    <a class="btn" href="assets/thumbnails/thumb2-token9246.png" download>⬇️ Download</a></article>
+  <article class="thumb"><img src="assets/thumbnails/thumb3-ai-math.png" alt="AI doesn't read words: horse plus wings gives unicorn">
+    <h3>3 · The surprising claim</h3><p>“AI DOESN'T READ WORDS” contradicts what people assume. Best for a broad, non-technical audience.</p>
+    <a class="btn" href="assets/thumbnails/thumb3-ai-math.png" download>⬇️ Download</a></article>
+</section>
+
+<h2>✅ Upload checklist</h2>
+<ul class="check">
+<li>Upload the MP4 in YouTube Studio (vertical + under 60 s = Short). Keep <code>#Shorts</code> in the title.</li>
+<li>Paste title, description and tags from above; pin the comment after publishing.</li>
+<li>Custom thumbnails on Shorts are set in the YouTube mobile app or Studio’s “Customize” → thumbnail after upload; feed thumbnails may still use a frame from the video.</li>
+<li>Test the three thumbnails one at a time (or with YouTube’s “Test &amp; compare”) and keep the one with the best click-through.</li>
+</ul>
+</main>
+<script>
+document.querySelectorAll('button[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.copy).innerText;
+    var done=function(){var o=b.textContent;b.textContent='Copied ✓';setTimeout(function(){b.textContent=o},1400)};
+    try{navigator.clipboard.writeText(t).then(done,function(){})}catch(e){}
+  });
+});
+</script>
+</body></html>

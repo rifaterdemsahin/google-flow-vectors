@@ -1,6 +1,8 @@
 # 🐴➡️🦄 Google Flow Vectors
 
 > **Live page:** 🌐 https://rifaterdemsahin.github.io/google-flow-vectors/
+>
+> **YouTube upload page** (title, description, 3 thumbnails): 📺 https://rifaterdemsahin.github.io/google-flow-vectors/youtube.html
 
 A 48-second vertical **YouTube Short** that explains how AI understands words — using a horse. 🧠✨
 
