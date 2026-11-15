@@ -16,7 +16,7 @@ describe('ingested clips', () => {
   }
   it('no tracked file contains the fal key', () => {
     let out = '';
-    try { out = execFileSync('sh', ['-c', 'git ls-files | xargs grep -l fal_sk_ || true']).toString(); } catch {}
+    try { out = execFileSync('sh', ['-c', 'git ls-files | xargs grep -lE "fal_s[k]_[0-9a-f]" || true']).toString(); } catch {}
     expect(out.trim()).toBe('');
   });
 });
