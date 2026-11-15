@@ -8,7 +8,7 @@
     "align": "tsx scripts/align.mjs",
     "test": "vitest run",
     "studio": "remotion studio src/index.ts",
-    "build:video": "npm run ingest && npm run tts && npm run align && remotion render src/index.ts Short out/short_1080x1920.mp4 --codec=h264"
+    "build:video": "npm run ingest && npm run tts && npm run align && remotion render src/index.ts Short out/short_1080x1920.mp4 --codec=h264 --crf=30"
   },
   "dependencies": {
     "@fal-ai/client": "^1.11.0",
