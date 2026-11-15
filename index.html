@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Google Flow Vectors</title>
+<style>
+:root{--bg:#0b0d14;--fg:#eef1f8;--mut:#9aa3b8;--card:#141826;--acc:#ffd54a;--acc2:#4fd8ff}
+@media (prefers-color-scheme:light){:root{--bg:#f6f7fb;--fg:#12151f;--mut:#566079;--card:#fff;--acc:#b07a00;--acc2:#006d8f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Inter,system-ui,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:clamp(28px,5vw,46px);margin:0 0 8px}h2{margin:48px 0 12px;color:var(--acc2)}h3{margin:10px 0 4px}
+.sub{color:var(--mut);max-width:60ch}a{color:var(--acc2)}code{background:var(--card);padding:1px 6px;border-radius:6px}
+.hero{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:28px;align-items:start}
+@media(max-width:720px){.hero{grid-template-columns:1fr}}
+video,audio{width:100%;border-radius:12px;background:#000}audio{height:36px;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.scene{background:var(--card);border-radius:14px;padding:12px}.vo{margin:4px 0;font-size:14px}.lt{color:var(--mut);font-size:13px;margin:4px 0}
+.pipe{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.pipe li{background:var(--card);padding:8px 12px;border-radius:999px}
+ol.evo li{margin:6px 0}.pill{color:var(--acc)}
+</style></head><body><main>
+<h1>🐴➡️🦄 Google Flow Vectors</h1>
+<p class="sub">A 48-second YouTube Short that explains how AI understands words as vectors — with a horse. Left: the output. Below: the input from Google Flow and how it was assembled.</p>
+
+<h2>🎬 Output</h2>
+<section class="hero">
+  <video src="out/short_1080x1920.mp4" controls playsinline preload="metadata"></video>
+  <div>
+    <p><b>short_1080x1920.mp4</b> — 1080×1920, 24 fps, H.264/AAC, 47.5 s, 17.8 MB.</p>
+    <p>Six clips stitched, ElevenLabs voice-over (via fal.ai), animated word-by-word captions, and a loop crossfade from the last frame back to the first.</p>
+    <ul class="pipe"><li>1️⃣ Clips</li><li>2️⃣ Voice-over</li><li>3️⃣ Word timings</li><li>4️⃣ Remotion compose</li><li>5️⃣ Export</li></ul>
+    <p><a href="out/short_1080x1920.mp4" download>⬇️ Download the MP4</a> · <a href="https://github.com/rifaterdemsahin/google-flow-vectors">📦 Source on GitHub</a></p>
+  </div>
+</section>
+
+<h2>📥 Input: the six Google Flow scenes</h2>
+<p class="sub">Each clip is 8 s, vertical 9:16, with its lower-third card already burned in. The voice line below each is the ElevenLabs take used in the export.</p>
+<section class="grid">
+    <article class="scene"><video src="assets/clips/scene1.mp4" controls muted playsinline preload="metadata" poster=""></video>
+      <h3>Scene 1 · The Hook</h3><p class="vo">“How does an AI actually understand words? It doesn't read letters—it turns features into direction arrows on a giant map!”</p><p class="lt">Lower third: <code>AI maps concepts as direction vectors.</code></p>
+      <audio src="assets/vo/scene1.mp3" controls preload="none"></audio></article>
+    <article class="scene"><video src="assets/clips/scene2.mp4" controls muted playsinline preload="metadata" poster=""></video>
+      <h3>Scene 2 · Base Vector Node (Horse)</h3><p class="vo">“Think of this horse as a base vector. Every single concept sits at its own specific spot on the coordinate grid.”</p><p class="lt">Lower third: <code>Base Vector Node: Horse</code></p>
+      <audio src="assets/vo/scene2.mp3" controls preload="none"></audio></article>
+    <article class="scene"><video src="assets/clips/scene3.mp4" controls muted playsinline preload="metadata" poster=""></video>
+      <h3>Scene 3 · Horse + Wings = Pegasus</h3><p class="vo">“Add the “Wings” direction vector to the Horse... and the AI moves directly to the coordinate for Pegasus!”</p><p class="lt">Lower third: <code>Horse + Wings = Pegasus</code></p>
+      <audio src="assets/vo/scene3.mp3" controls preload="none"></audio></article>
+    <article class="scene"><video src="assets/clips/scene4.mp4" controls muted playsinline preload="metadata" poster=""></video>
+      <h3>Scene 4 · Horse + Horn = Unicorn</h3><p class="vo">“Add the “Horn” direction vector instead... and the coordinate shifts straight to Unicorn!”</p><p class="lt">Lower third: <code>Horse + Horn = Unicorn</code></p>
+      <audio src="assets/vo/scene4.mp3" controls preload="none"></audio></article>
+    <article class="scene"><video src="assets/clips/scene5.mp4" controls muted playsinline preload="metadata" poster=""></video>
+      <h3>Scene 5 · Pegasus − Wings + Horn = Unicorn</h3><p class="vo">“Which means... Pegasus, minus Wings, plus Horn, equals Unicorn! To an AI, concept logic is just basic geometry.”</p><p class="lt">Lower third: <code>Pegasus - Wings + Horn = Unicorn</code></p>
+      <audio src="assets/vo/scene5.mp3" controls preload="none"></audio></article>
+    <article class="scene"><video src="assets/clips/scene6.mp4" controls muted playsinline preload="metadata" poster=""></video>
+      <h3>Scene 6 · Token 9246 &amp; the Loop</h3><p class="vo">“Token 9246 is hiding inside! But... how do these vectors talk to each other? How DOES an AI understand concepts?”</p><p class="lt">Lower third: <code>Token 9246 | Seamless Loop</code></p>
+      <audio src="assets/vo/scene6.mp3" controls preload="none"></audio></article>
+</section>
+
+<h2>🧭 Input: how the idea evolved in Google Flow</h2>
+<ol class="evo">
+<li><b>King − Man + Woman = Queen</b> — hook “Tokens are just numbers”; the loop and the Token 9246 Easter egg were born here.</li>
+<li><b>Simplified for a 4-year-old</b> — Kitty + Wings = Flying Kitty (Pip the Pixie-Bot, Toy Box Galaxy).</li>
+<li><b>Aged up</b> — Horse + Wings = Pegasus, Horse + Horn = Unicorn, <span class="pill">Pegasus − Wings + Horn = Unicorn</span>.</li>
+<li><b>Format fixed</b> — six 8-second vertical scenes with lower thirds = a 48 s YouTube Short.</li>
+<li><b>Clips + voice script</b> — six clips generated; voice-over written in ElevenLabs format (Stability 35–45 %, Similarity 75–85 %, Style 15–20 %, Speaker Boost on).</li>
+</ol>
+<p>Full written record: <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/input/google-flow-brief.md">docs/input/google-flow-brief.md</a>.</p>
+
+<h2>🥚 The Easter egg &amp; the loop</h2>
+<p>Scene 6 zooms into the unicorn horn where <b>Token 9246</b> ignites, then returns to the dark star-field of scene 1. The last question flows straight into the first line, so the Short loops.</p>
+
+<h2>🧪 How it was built</h2>
+<p>Trunk-based on <code>main</code>, test-first, planned with the <i>superpowers</i> skills: <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/superpowers/specs/2026-11-15-vector-short-design.md">design</a> → <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/superpowers/plans/2026-11-15-vector-short.md">plan</a> → execution. Captions use the script’s own words (Whisper supplies timing only).</p>
+</main></body></html>
