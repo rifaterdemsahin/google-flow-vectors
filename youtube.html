@@ -13,8 +13,8 @@ h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px}h2{margin:44px 0 12px;color:var
 .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:6px}
 button,.btn{background:var(--acc);color:#1a1300;border:0;border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer;text-decoration:none;font-size:14px;display:inline-block}
 .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.thumbs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.thumb{background:var(--card);border-radius:14px;padding:12px}.thumb img{width:100%;border-radius:10px;display:block;aspect-ratio:16/9;object-fit:cover}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.thumb{background:var(--card);border-radius:14px;padding:12px}.thumb img{width:100%;border-radius:10px;display:block;aspect-ratio:9/16;object-fit:cover}
 .thumb p{margin:8px 0;font-size:14px;color:var(--mut)}
 video{width:100%;max-width:340px;border-radius:12px;background:#000}
 .top{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:24px;align-items:start}@media(max-width:720px){.top{grid-template-columns:1fr}}
@@ -70,25 +70,25 @@ https://www.skool.com/delivery-pilot-8938
 <div class="box"><div class="row"><div class="lbl">Pinned comment · alternative B (rewatch driver)</div><button data-copy="pin3">Copy</button></div>
 <pre id="pin3">Token 9246 is hiding in this video 👀 First person to tell me the exact second it appears gets a shout-out in the next one! More AI made simple, free on Skool: https://www.skool.com/delivery-pilot-8938</pre></div>
 
-<h2>🖼️ Thumbnails (curiosity triggers)</h2>
-<p class="sub">Three different hooks to A/B test. All are 16:9, under YouTube's 2 MB limit, with big readable text. Each one opens a curiosity gap that the video closes.</p>
+<h2>🖼️ Short thumbnails (curiosity triggers)</h2>
+<p class="sub">Three vertical 9:16 covers (768×1376, each under YouTube's 2 MB limit) with big text in the top half, because the Shorts player covers the bottom. Each opens a curiosity gap the video closes, so you can A/B test them.</p>
 <section class="thumbs">
-  <article class="thumb"><img src="assets/thumbnails/thumb1-equation.png" alt="Pegasus minus Wings plus Horn equals question mark">
+  <article class="thumb"><img src="assets/thumbnails/short1-equation.png" alt="Pegasus minus Wings plus Horn equals question mark">
     <h3>1 · The unanswered equation</h3><p>“PEGASUS − WINGS + HORN = ?” The brain wants to finish the sum. Best for people who like puzzles.</p>
-    <a class="btn" href="assets/thumbnails/thumb1-equation.png" download>⬇️ Download</a></article>
-  <article class="thumb"><img src="assets/thumbnails/thumb2-token9246.png" alt="What is hiding inside the unicorn horn, token 9246">
+    <a class="btn" href="assets/thumbnails/short1-equation.png" download>⬇️ Download</a> <a href="assets/thumbnails/thumb1-equation.png" download>16:9 version</a></article>
+  <article class="thumb"><img src="assets/thumbnails/short2-token9246.png" alt="What is hiding inside the unicorn horn, token 9246">
     <h3>2 · The hidden secret</h3><p>Red circle on “9246” inside the horn. Promises an Easter egg, which drives rewatches. Strongest on curiosity.</p>
-    <a class="btn" href="assets/thumbnails/thumb2-token9246.png" download>⬇️ Download</a></article>
-  <article class="thumb"><img src="assets/thumbnails/thumb3-ai-math.png" alt="AI doesn't read words: horse plus wings gives unicorn">
+    <a class="btn" href="assets/thumbnails/short2-token9246.png" download>⬇️ Download</a> <a href="assets/thumbnails/thumb2-token9246.png" download>16:9 version</a></article>
+  <article class="thumb"><img src="assets/thumbnails/short3-ai-math.png" alt="AI doesn't read words: horse plus wings gives unicorn">
     <h3>3 · The surprising claim</h3><p>“AI DOESN'T READ WORDS” contradicts what people assume. Best for a broad, non-technical audience.</p>
-    <a class="btn" href="assets/thumbnails/thumb3-ai-math.png" download>⬇️ Download</a></article>
+    <a class="btn" href="assets/thumbnails/short3-ai-math.png" download>⬇️ Download</a> <a href="assets/thumbnails/thumb3-ai-math.png" download>16:9 version</a></article>
 </section>
 
 <h2>✅ Upload checklist</h2>
 <ul class="check">
 <li>Upload the MP4 in YouTube Studio (vertical + under 60 s = Short). Keep <code>#Shorts</code> in the title.</li>
 <li>Paste title, description and tags from above; pin the comment after publishing.</li>
-<li>Custom thumbnails on Shorts are set in the YouTube mobile app or Studio’s “Customize” → thumbnail after upload; feed thumbnails may still use a frame from the video.</li>
+<li>Set the vertical thumbnail in the YouTube mobile app (or Studio) after upload; some Shorts surfaces may still show a frame from the video.</li>
 <li>Test the three thumbnails one at a time (or with YouTube’s “Test &amp; compare”) and keep the one with the best click-through.</li>
 </ul>
 </main>
