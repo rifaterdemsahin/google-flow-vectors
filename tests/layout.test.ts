@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { CAPTION_TOP_PCT, CAPTION_HEIGHT_PCT, CTA_FRAMES, CTA_TEXT, CTA_URL } from '../src/layout';
+import { existsSync } from 'node:fs';
+import { CAPTION_TOP_PCT, CAPTION_HEIGHT_PCT, CTA_FRAMES, CTA_LOGO, CTA_TEXT, CTA_URL } from '../src/layout';
 import { SCENE_FRAMES } from '../src/script';
 
 describe('layout', () => {
@@ -12,5 +13,8 @@ describe('layout', () => {
     expect(CTA_TEXT).toMatch(/Delivery Pilot/);
     expect(CTA_FRAMES).toBeGreaterThanOrEqual(48);
     expect(CTA_FRAMES).toBeLessThanOrEqual(SCENE_FRAMES);
+  });
+  it('CTA logo file exists in assets/', () => {
+    expect(existsSync(`assets/${CTA_LOGO}`)).toBe(true);
   });
 });

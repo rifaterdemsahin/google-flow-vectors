@@ -8,3 +8,4 @@ export const CTA_TEXT = 'Join the Delivery Pilot community';
 export const CTA_SUB = 'Free on Skool';
 export const CTA_URL = 'https://www.skool.com/delivery-pilot-8938';
 export const CTA_DISPLAY_URL = 'skool.com/delivery-pilot-8938';
+export const CTA_LOGO = 'skool-logo.png';

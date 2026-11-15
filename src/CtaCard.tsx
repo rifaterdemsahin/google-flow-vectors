@@ -1,5 +1,5 @@
-import { AbsoluteFill, spring, useCurrentFrame, useVideoConfig } from 'remotion';
-import { CTA_DISPLAY_URL, CTA_SUB, CTA_TEXT } from './layout';
+import { AbsoluteFill, Img, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { CTA_DISPLAY_URL, CTA_LOGO, CTA_SUB, CTA_TEXT } from './layout';
 
 export const CtaCard = () => {
   const frame = useCurrentFrame();
@@ -10,9 +10,12 @@ export const CtaCard = () => {
     <AbsoluteFill style={{ top: '12%', height: '24%', justifyContent: 'center', alignItems: 'center' }}>
       <div
         style={{
-          width: 900,
-          padding: '34px 40px',
-          textAlign: 'center',
+          width: 940,
+          padding: '28px 36px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 28,
+          textAlign: 'left',
           borderRadius: 36,
           background: 'linear-gradient(135deg, rgba(20,24,38,0.92), rgba(60,20,90,0.92))',
           border: '3px solid #FFD54A',
@@ -23,9 +26,12 @@ export const CtaCard = () => {
           opacity: Math.min(1, pop * 1.4),
         }}
       >
-        <div style={{ fontSize: 58, fontWeight: 900, lineHeight: 1.1 }}>🚀 {CTA_TEXT}</div>
-        <div style={{ fontSize: 40, fontWeight: 700, color: '#FFD54A', marginTop: 10 }}>{CTA_SUB}</div>
-        <div style={{ fontSize: 38, fontWeight: 600, marginTop: 10, opacity: 0.95 }}>{CTA_DISPLAY_URL}</div>
+        <Img src={staticFile(CTA_LOGO)} style={{ width: 190, height: 190, borderRadius: '50%', flexShrink: 0 }} />
+        <div>
+          <div style={{ fontSize: 50, fontWeight: 900, lineHeight: 1.1 }}>{CTA_TEXT}</div>
+          <div style={{ fontSize: 38, fontWeight: 700, color: '#FFD54A', marginTop: 8 }}>{CTA_SUB}</div>
+          <div style={{ fontSize: 34, fontWeight: 600, marginTop: 8, opacity: 0.95 }}>{CTA_DISPLAY_URL}</div>
+        </div>
       </div>
     </AbsoluteFill>
   );
