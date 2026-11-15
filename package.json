@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "ingest": "node scripts/ingest-clips.mjs",
-    "tts": "node scripts/tts.mjs",
-    "align": "node scripts/align.mjs",
+    "tts": "tsx scripts/tts.mjs",
+    "align": "tsx scripts/align.mjs",
     "test": "vitest run",
     "studio": "remotion studio src/index.ts",
     "build:video": "npm run ingest && npm run tts && npm run align && remotion render src/index.ts Short out/short_1080x1920.mp4 --codec=h264"
