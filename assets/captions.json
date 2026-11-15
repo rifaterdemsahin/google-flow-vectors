@@ -1,0 +1,569 @@
+{
+  "1": [
+    {
+      "text": "How",
+      "start": 0.03,
+      "end": 0.11
+    },
+    {
+      "text": "does",
+      "start": 0.11,
+      "end": 0.27
+    },
+    {
+      "text": "an",
+      "start": 0.27,
+      "end": 0.41
+    },
+    {
+      "text": "AI",
+      "start": 0.41,
+      "end": 0.65
+    },
+    {
+      "text": "actually",
+      "start": 0.65,
+      "end": 1.11
+    },
+    {
+      "text": "understand",
+      "start": 1.11,
+      "end": 1.43
+    },
+    {
+      "text": "words?",
+      "start": 1.43,
+      "end": 2.17
+    },
+    {
+      "text": "It",
+      "start": 2.49,
+      "end": 2.51
+    },
+    {
+      "text": "doesn't",
+      "start": 2.51,
+      "end": 2.75
+    },
+    {
+      "text": "read",
+      "start": 2.75,
+      "end": 2.89
+    },
+    {
+      "text": "letters—",
+      "start": 2.89,
+      "end": 3.33
+    },
+    {
+      "text": "it",
+      "start": 3.51,
+      "end": 3.53
+    },
+    {
+      "text": "turns",
+      "start": 3.53,
+      "end": 3.75
+    },
+    {
+      "text": "features",
+      "start": 3.75,
+      "end": 4.03
+    },
+    {
+      "text": "into",
+      "start": 4.03,
+      "end": 4.39
+    },
+    {
+      "text": "direction",
+      "start": 4.39,
+      "end": 4.75
+    },
+    {
+      "text": "arrows",
+      "start": 4.75,
+      "end": 5.05
+    },
+    {
+      "text": "on",
+      "start": 5.05,
+      "end": 5.33
+    },
+    {
+      "text": "a",
+      "start": 5.33,
+      "end": 5.45
+    },
+    {
+      "text": "giant",
+      "start": 5.45,
+      "end": 5.73
+    },
+    {
+      "text": "map!",
+      "start": 5.73,
+      "end": 6.19
+    }
+  ],
+  "2": [
+    {
+      "text": "Think",
+      "start": 0.03,
+      "end": 0.19
+    },
+    {
+      "text": "of",
+      "start": 0.19,
+      "end": 0.33
+    },
+    {
+      "text": "this",
+      "start": 0.33,
+      "end": 0.49
+    },
+    {
+      "text": "horse",
+      "start": 0.49,
+      "end": 0.79
+    },
+    {
+      "text": "as",
+      "start": 0.79,
+      "end": 1.07
+    },
+    {
+      "text": "a",
+      "start": 1.07,
+      "end": 1.27
+    },
+    {
+      "text": "base",
+      "start": 1.27,
+      "end": 1.55
+    },
+    {
+      "text": "vector.",
+      "start": 1.55,
+      "end": 2.07
+    },
+    {
+      "text": "Every",
+      "start": 2.33,
+      "end": 2.37
+    },
+    {
+      "text": "single",
+      "start": 2.37,
+      "end": 2.73
+    },
+    {
+      "text": "concept",
+      "start": 2.73,
+      "end": 3.19
+    },
+    {
+      "text": "sits",
+      "start": 3.19,
+      "end": 3.55
+    },
+    {
+      "text": "at",
+      "start": 3.55,
+      "end": 3.81
+    },
+    {
+      "text": "its",
+      "start": 3.81,
+      "end": 4.01
+    },
+    {
+      "text": "own",
+      "start": 4.01,
+      "end": 4.25
+    },
+    {
+      "text": "specific",
+      "start": 4.25,
+      "end": 4.59
+    },
+    {
+      "text": "spot",
+      "start": 4.59,
+      "end": 5.05
+    },
+    {
+      "text": "on",
+      "start": 5.05,
+      "end": 5.45
+    },
+    {
+      "text": "the",
+      "start": 5.45,
+      "end": 5.61
+    },
+    {
+      "text": "coordinate",
+      "start": 5.61,
+      "end": 5.97
+    },
+    {
+      "text": "grid.",
+      "start": 5.97,
+      "end": 6.57
+    }
+  ],
+  "3": [
+    {
+      "text": "Add",
+      "start": 0.03,
+      "end": 0.15
+    },
+    {
+      "text": "the",
+      "start": 0.15,
+      "end": 0.33
+    },
+    {
+      "text": "\"Wings\"",
+      "start": 0.33,
+      "end": 0.79
+    },
+    {
+      "text": "direction",
+      "start": 0.79,
+      "end": 1.09
+    },
+    {
+      "text": "vector",
+      "start": 1.09,
+      "end": 1.49
+    },
+    {
+      "text": "to",
+      "start": 1.49,
+      "end": 1.77
+    },
+    {
+      "text": "the",
+      "start": 1.77,
+      "end": 1.85
+    },
+    {
+      "text": "Horse...",
+      "start": 1.85,
+      "end": 2.37
+    },
+    {
+      "text": "and",
+      "start": 2.37,
+      "end": 2.89
+    },
+    {
+      "text": "the",
+      "start": 2.89,
+      "end": 3.05
+    },
+    {
+      "text": "AI",
+      "start": 3.05,
+      "end": 3.35
+    },
+    {
+      "text": "moves",
+      "start": 3.35,
+      "end": 3.99
+    },
+    {
+      "text": "directly",
+      "start": 3.99,
+      "end": 4.47
+    },
+    {
+      "text": "to",
+      "start": 4.47,
+      "end": 4.81
+    },
+    {
+      "text": "the",
+      "start": 4.81,
+      "end": 4.89
+    },
+    {
+      "text": "coordinate",
+      "start": 4.89,
+      "end": 5.27
+    },
+    {
+      "text": "for",
+      "start": 5.27,
+      "end": 5.55
+    },
+    {
+      "text": "Pegasus!",
+      "start": 5.55,
+      "end": 6.31
+    }
+  ],
+  "4": [
+    {
+      "text": "Add",
+      "start": 0.03,
+      "end": 0.13
+    },
+    {
+      "text": "the",
+      "start": 0.13,
+      "end": 0.31
+    },
+    {
+      "text": "\"Horn\"",
+      "start": 0.31,
+      "end": 0.63
+    },
+    {
+      "text": "direction",
+      "start": 0.63,
+      "end": 1.11
+    },
+    {
+      "text": "vector",
+      "start": 1.11,
+      "end": 1.43
+    },
+    {
+      "text": "instead...",
+      "start": 1.43,
+      "end": 1.79
+    },
+    {
+      "text": "and",
+      "start": 1.79,
+      "end": 2.25
+    },
+    {
+      "text": "the",
+      "start": 2.25,
+      "end": 2.35
+    },
+    {
+      "text": "coordinate",
+      "start": 2.35,
+      "end": 2.69
+    },
+    {
+      "text": "shifts",
+      "start": 2.69,
+      "end": 2.99
+    },
+    {
+      "text": "straight",
+      "start": 2.99,
+      "end": 3.65
+    },
+    {
+      "text": "to",
+      "start": 3.65,
+      "end": 4.07
+    },
+    {
+      "text": "Unicorn!",
+      "start": 4.07,
+      "end": 4.75
+    }
+  ],
+  "5": [
+    {
+      "text": "Which",
+      "start": 0.03,
+      "end": 0.19
+    },
+    {
+      "text": "means...",
+      "start": 0.19,
+      "end": 0.67
+    },
+    {
+      "text": "Pegasus,",
+      "start": 0.67,
+      "end": 1.31
+    },
+    {
+      "text": "minus",
+      "start": 1.31,
+      "end": 1.57
+    },
+    {
+      "text": "Wings,",
+      "start": 1.57,
+      "end": 1.89
+    },
+    {
+      "text": "plus",
+      "start": 1.89,
+      "end": 2.21
+    },
+    {
+      "text": "Horn,",
+      "start": 2.21,
+      "end": 2.55
+    },
+    {
+      "text": "equals",
+      "start": 2.55,
+      "end": 2.85
+    },
+    {
+      "text": "Unicorn!",
+      "start": 2.85,
+      "end": 3.57
+    },
+    {
+      "text": "To",
+      "start": 3.85,
+      "end": 3.91
+    },
+    {
+      "text": "an",
+      "start": 3.91,
+      "end": 4.03
+    },
+    {
+      "text": "AI,",
+      "start": 4.03,
+      "end": 4.65
+    },
+    {
+      "text": "concept",
+      "start": 4.65,
+      "end": 5.01
+    },
+    {
+      "text": "logic",
+      "start": 5.01,
+      "end": 5.31
+    },
+    {
+      "text": "is",
+      "start": 5.31,
+      "end": 5.63
+    },
+    {
+      "text": "just",
+      "start": 5.63,
+      "end": 5.79
+    },
+    {
+      "text": "basic",
+      "start": 5.79,
+      "end": 6.03
+    },
+    {
+      "text": "geometry.",
+      "start": 6.03,
+      "end": 6.79
+    }
+  ],
+  "6": [
+    {
+      "text": "Token",
+      "start": 0.03,
+      "end": 0.27
+    },
+    {
+      "text": "9246",
+      "start": 0.27,
+      "end": 0.97
+    },
+    {
+      "text": "is",
+      "start": 0.97,
+      "end": 1.23
+    },
+    {
+      "text": "hiding",
+      "start": 1.23,
+      "end": 1.43
+    },
+    {
+      "text": "inside!",
+      "start": 1.43,
+      "end": 1.99
+    },
+    {
+      "text": "But...",
+      "start": 2.31,
+      "end": 2.37
+    },
+    {
+      "text": "how",
+      "start": 2.37,
+      "end": 2.85
+    },
+    {
+      "text": "do",
+      "start": 2.85,
+      "end": 2.99
+    },
+    {
+      "text": "these",
+      "start": 2.99,
+      "end": 3.13
+    },
+    {
+      "text": "vectors",
+      "start": 3.13,
+      "end": 3.49
+    },
+    {
+      "text": "talk",
+      "start": 3.49,
+      "end": 3.79
+    },
+    {
+      "text": "to",
+      "start": 3.79,
+      "end": 3.89
+    },
+    {
+      "text": "each",
+      "start": 3.89,
+      "end": 4.05
+    },
+    {
+      "text": "other?",
+      "start": 4.05,
+      "end": 4.39
+    },
+    {
+      "text": "How",
+      "start": 4.67,
+      "end": 4.71
+    },
+    {
+      "text": "DOES",
+      "start": 4.71,
+      "end": 4.89
+    },
+    {
+      "text": "an",
+      "start": 4.89,
+      "end": 5.03
+    },
+    {
+      "text": "AI",
+      "start": 5.03,
+      "end": 5.31
+    },
+    {
+      "text": "understand",
+      "start": 5.31,
+      "end": 5.77
+    },
+    {
+      "text": "concepts?",
+      "start": 5.77,
+      "end": 6.69
+    }
+  ]
+}
