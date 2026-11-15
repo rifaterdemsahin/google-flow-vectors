@@ -1,5 +1,6 @@
 import { AbsoluteFill, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import type { CaptionWord } from './align';
+import { CAPTION_HEIGHT_PCT, CAPTION_TOP_PCT } from '../layout';
 import { chunkWords } from './chunk';
 
 const MAX_WIDTH = 940;
@@ -25,8 +26,8 @@ export const Captions = ({ words, offsetSeconds }: { words: CaptionWord[]; offse
   const size = Math.min(BASE_SIZE, Math.floor(MAX_WIDTH / (text.length * 0.56)));
 
   return (
-    // Upper third (15%-30% of the frame), clear of the burned-in lower-third cards.
-    <AbsoluteFill style={{ top: '15%', height: '15%', justifyContent: 'center', alignItems: 'center' }}>
+    // Lower band (62%-77% of the frame), just above the burned-in lower-third cards.
+    <AbsoluteFill style={{ top: `${CAPTION_TOP_PCT}%`, height: `${CAPTION_HEIGHT_PCT}%`, justifyContent: 'center', alignItems: 'center' }}>
       <div
         style={{
           maxWidth: MAX_WIDTH,

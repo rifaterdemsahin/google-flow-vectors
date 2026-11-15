@@ -38,4 +38,4 @@ npm run studio              # 🎛️ open Remotion Studio to preview/edit
 - `docs/superpowers/` — 📝 design spec and implementation plan
 
 ## 🧪 How it was built
-Trunk-based on `main`, test-first (TDD), planned with the *superpowers* skills: brainstorm → design → plan → execute. Captions use the **script's own words** (Whisper only supplies timing), so names like "Pegasus" and "9246" are always spelled right. Clips already carry their own lower-third cards, so captions sit in the **upper third** to avoid overlap. 🎯
+Trunk-based on `main`, test-first (TDD), planned with the *superpowers* skills: brainstorm → design → plan → execute. Captions use the **script's own words** (Whisper only supplies timing), so names like "Pegasus" and "9246" are always spelled right. Clips already carry their own lower-third cards, so captions sit in a **lower band just above them**, and a **Skool CTA** closes the video. 🎯

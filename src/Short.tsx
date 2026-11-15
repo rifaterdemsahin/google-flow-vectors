@@ -1,4 +1,6 @@
 import { AbsoluteFill, Freeze, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame } from 'remotion';
+import { CtaCard } from './CtaCard';
+import { CTA_FRAMES } from './layout';
 import { SceneView } from './SceneView';
 import { SCENES, SCENE_FRAMES } from './script';
 
@@ -19,6 +21,9 @@ export const Short = () => {
           <SceneView scene={scene} />
         </Sequence>
       ))}
+      <Sequence from={total - CTA_FRAMES} durationInFrames={CTA_FRAMES}>
+        <CtaCard />
+      </Sequence>
       <AbsoluteFill style={{ opacity: loopOpacity }}>
         <Freeze frame={0}>
           <OffthreadVideo src={staticFile(SCENES[0].clip)} muted />
