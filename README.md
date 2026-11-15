@@ -1,5 +1,7 @@
 # 🐴➡️🦄 Google Flow Vectors
 
+> **Watch the Short:** ▶️ https://youtube.com/shorts/8ud3AaGKtP0
+>
 > **Live page:** 🌐 https://rifaterdemsahin.github.io/google-flow-vectors/
 >
 > **YouTube upload page** (title, description, 3 thumbnails): 📺 https://rifaterdemsahin.github.io/google-flow-vectors/youtube.html
