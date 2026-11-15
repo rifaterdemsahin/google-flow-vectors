@@ -72,9 +72,8 @@ ol.evo li{margin:8px 0}pre.mermaid{background:transparent;padding:0}.diagram{bac
 <p class="sub">You started in <b>Google Flow</b> (idea, storyboard, six clips, voice-over script) and moved to <b>Claude Code</b> to build, verify and publish. Source: <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/workflow.md">docs/workflow.md</a>.</p>
 <h3>1 · The whole journey</h3>
 <div class="diagram"><pre class="mermaid">
-flowchart LR
+flowchart TD
   subgraph FLOW[&quot;Phase 1 · Google Flow&quot;]
-    direction TB
     A[&quot;Idea: how does AI understand words?&quot;] --&gt; B[&quot;King - Man + Woman = Queen&quot;]
     B --&gt; C[&quot;Simplify for a 4-year-old: Kitty + Wings&quot;]
     C --&gt; D[&quot;Age up: Horse + Wings = Pegasus, Horse + Horn = Unicorn&quot;]
@@ -83,14 +82,12 @@ flowchart LR
     F --&gt; G[&quot;6 video clips, 8 s each&quot;]
   end
   subgraph CLAUDE[&quot;Phase 2 · Claude Code with superpowers&quot;]
-    direction TB
     H[&quot;Hand-off: 6 clips, scene list, VO script&quot;] --&gt; I[&quot;Brainstorm: pick Remotion&quot;]
     I --&gt; J[&quot;Design doc&quot;]
     J --&gt; K[&quot;Implementation plan&quot;]
     K --&gt; L[&quot;Execute test-first, commit to main&quot;]
   end
   subgraph SHIP[&quot;Phase 3 · Ship&quot;]
-    direction TB
     M[&quot;Export MP4&quot;] --&gt; N[&quot;GitHub Pages site&quot;]
     N --&gt; O[&quot;YouTube page: title, description, thumbnails, pinned comment&quot;]
   end
@@ -142,7 +139,7 @@ sequenceDiagram
 </pre></div>
 <h3>4 · The superpowers process</h3>
 <div class="diagram"><pre class="mermaid">
-flowchart LR
+flowchart TD
   B[&quot;brainstorming: approaches A / B / C&quot;] --&gt; D[&quot;design doc&quot;]
   D --&gt; W[&quot;writing-plans&quot;]
   W --&gt; E[&quot;executing-plans&quot;]

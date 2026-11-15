@@ -5,9 +5,8 @@ The video was started in **Google Flow** (idea, storyboard, clips, voice-over sc
 ## 1. The whole journey
 
 ```mermaid
-flowchart LR
+flowchart TD
   subgraph FLOW["Phase 1 · Google Flow"]
-    direction TB
     A["Idea: how does AI understand words?"] --> B["King - Man + Woman = Queen"]
     B --> C["Simplify for a 4-year-old: Kitty + Wings"]
     C --> D["Age up: Horse + Wings = Pegasus, Horse + Horn = Unicorn"]
@@ -16,14 +15,12 @@ flowchart LR
     F --> G["6 video clips, 8 s each"]
   end
   subgraph CLAUDE["Phase 2 · Claude Code with superpowers"]
-    direction TB
     H["Hand-off: 6 clips, scene list, VO script"] --> I["Brainstorm: pick Remotion"]
     I --> J["Design doc"]
     J --> K["Implementation plan"]
     K --> L["Execute test-first, commit to main"]
   end
   subgraph SHIP["Phase 3 · Ship"]
-    direction TB
     M["Export MP4"] --> N["GitHub Pages site"]
     N --> O["YouTube page: title, description, thumbnails, pinned comment"]
   end
@@ -81,7 +78,7 @@ sequenceDiagram
 ## 4. The superpowers process used in Claude
 
 ```mermaid
-flowchart LR
+flowchart TD
   B["brainstorming: approaches A / B / C"] --> D["design doc"]
   D --> W["writing-plans"]
   W --> E["executing-plans"]
