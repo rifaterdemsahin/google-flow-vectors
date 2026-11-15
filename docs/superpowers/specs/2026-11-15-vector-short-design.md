@@ -13,7 +13,7 @@ stitched in scene order, animated word-by-word subtitles, MP4 export. All code l
 ## Constraints
 - Clips (7.92s each, 1080x1920, have audio; ~47.5s total) are copied from ~/Downloads into `assets/clips/`.
   All six already contain burned-in lower-third cards at the bottom (~80-92% of height).
-  -> We add NO lower thirds; animated captions sit just above them (62-77% height). A Skool CTA card shows over the last 3s of scene 6.
+  -> We add NO lower thirds; animated captions sit just above them (62-77% height). A dedicated 2s Skool end screen (logo + link) is appended after scene 6 (total 49.5s) and fades into scene 1's first frame for the loop.
 - Clip order: 1 Camera_gliding_through_cosmic_space, 2 Futuristic_horse_standing_on_grid,
   3 Horse_transforming_into_Pegasus, 4 Futuristic_horse_transforms_into… (verified: horse -> unicorn),
   5 Pegasus_transforms_into_unicorn, 6 Macro_zoom_into_futuristic_unicorn.

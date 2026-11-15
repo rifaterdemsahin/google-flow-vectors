@@ -14,7 +14,7 @@ if (v.width !== 1080 || v.height !== 1920) fail(`size ${v.width}x${v.height}`);
 if (v.r_frame_rate !== '24/1') fail(`fps ${v.r_frame_rate}`);
 if (!a || a.codec_name !== 'aac') fail('audio must be aac');
 const d = parseFloat(info.format.duration);
-if (Math.abs(d - 47.5) > 0.3) fail(`duration ${d}`);
+if (Math.abs(d - 49.5) > 0.3) fail(`duration ${d}`);
 const mb = statSync(F).size / 1e6;
 if (mb > 25) fail(`file is ${mb.toFixed(1)}MB (> 25MB limit for git)`);
 const vd = execFileSync('ffmpeg', ['-i', F, '-af', 'volumedetect', '-f', 'null', '-'], { stdio: ['ignore', 'pipe', 'pipe'] });

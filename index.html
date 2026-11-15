@@ -14,7 +14,7 @@ video,audio{width:100%;border-radius:12px;background:#000}audio{height:36px;marg
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
 .scene{background:var(--card);border-radius:14px;padding:12px}.vo{margin:4px 0;font-size:14px}.lt{color:var(--mut);font-size:13px;margin:4px 0}
 .pipe{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.pipe li{background:var(--card);padding:8px 12px;border-radius:999px}
-ol.evo li{margin:6px 0}.pill{color:var(--acc)}
+ol.evo li{margin:8px 0}pre{background:var(--card);padding:14px;border-radius:12px;overflow-x:auto}.pill{color:var(--acc)}
 </style></head><body><main>
 <h1>🐴➡️🦄 Google Flow Vectors</h1>
 <p class="sub">A 48-second YouTube Short that explains how AI understands words as vectors — with a horse. Left: the output. Below: the input from Google Flow and how it was assembled.</p>
@@ -23,8 +23,8 @@ ol.evo li{margin:6px 0}.pill{color:var(--acc)}
 <section class="hero">
   <video src="out/short_1080x1920.mp4" controls playsinline preload="metadata"></video>
   <div>
-    <p><b>short_1080x1920.mp4</b> — 1080×1920, 24 fps, H.264/AAC, 47.5 s, 17.8 MB.</p>
-    <p>Six clips stitched, ElevenLabs voice-over (via fal.ai), animated word-by-word captions, and a loop crossfade from the last frame back to the first.</p>
+    <p><b>short_1080x1920.mp4</b> — 1080×1920, 24 fps, H.264/AAC, 49.5 s, 18 MB.</p>
+    <p>Six clips stitched, ElevenLabs voice-over (via fal.ai), animated word-by-word captions, a 2-second Skool end screen, and a crossfade from the end screen back to the first frame so it loops.</p>
     <ul class="pipe"><li>1️⃣ Clips</li><li>2️⃣ Voice-over</li><li>3️⃣ Word timings</li><li>4️⃣ Remotion compose</li><li>5️⃣ Export</li></ul>
     <p>🚀 <b>Join the community:</b> <a href="https://www.skool.com/delivery-pilot-8938">Delivery Pilot on Skool</a></p>
     <p><a href="out/short_1080x1920.mp4" download>⬇️ Download the MP4</a> · <a href="https://github.com/rifaterdemsahin/google-flow-vectors">📦 Source on GitHub</a></p>
@@ -67,6 +67,20 @@ ol.evo li{margin:6px 0}.pill{color:var(--acc)}
 <h2>🥚 The Easter egg &amp; the loop</h2>
 <p>Scene 6 zooms into the unicorn horn where <b>Token 9246</b> ignites, then returns to the dark star-field of scene 1. The last question flows straight into the first line, so the Short loops.</p>
 
-<h2>🧪 How it was built</h2>
-<p>Trunk-based on <code>main</code>, test-first, planned with the <i>superpowers</i> skills: <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/superpowers/specs/2026-11-15-vector-short-design.md">design</a> → <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/superpowers/plans/2026-11-15-vector-short.md">plan</a> → execution. Captions use the script’s own words (Whisper supplies timing only).</p>
+<h2>🛠️ How it was created</h2>
+<p class="sub">The whole video is code in this repo, so anyone can re-run it. Here is the path from idea to MP4:</p>
+<ol class="evo">
+<li><b>🧠 Idea → storyboard (Google Flow).</b> You started with “King − Man + Woman = Queen”, simplified it, and landed on Horse + Wings = Pegasus and Horse + Horn = Unicorn. Google Flow generated a six-panel storyboard, then six 8-second vertical clips with lower-third cards burned in. Those six MP4s are the <i>input</i>.</li>
+<li><b>📥 Ingest.</b> <code>npm run ingest</code> copies the six newest clips from Downloads into <code>assets/clips/scene1…6.mp4</code> in story order.</li>
+<li><b>🎙️ Voice-over (fal.ai → ElevenLabs).</b> <code>npm run tts</code> sends each scene’s line to ElevenLabs through fal.ai (voice Adam, stability 0.4, similarity 0.8, style 0.15). Any line over 7.5 s is regenerated slightly faster so it never outruns its clip.</li>
+<li><b>⏱️ Word timings (fal.ai Whisper).</b> <code>npm run align</code> transcribes each voice file for word timestamps, then maps them onto <i>your script’s own words</i>, so “Pegasus” and “9246” are always spelled right.</li>
+<li><b>🎞️ Compose (Remotion).</b> A React project stacks six clips, the voice-over (clip audio ducked to 12 %), animated yellow word-highlight captions in the lower band above the burned-in cards, and a 2-second focused Skool end screen with a loop crossfade.</li>
+<li><b>📤 Export + check.</b> <code>npm run build:video</code> renders <code>out/short_1080x1920.mp4</code>; <code>node scripts/verify-export.mjs</code> confirms format, 49.5 s length, under 25 MB, and audible voice.</li>
+<li><b>🚢 Ship.</b> Trunk-based commits straight to <code>main</code>; GitHub Pages publishes this page, the clips and the final video.</li>
+</ol>
+<pre><code>npm install
+cp .env.example .env     # add FAL_KEY
+npm run build:video      # ingest → tts → align → render
+npm run studio           # preview in Remotion Studio</code></pre>
+<p>Built test-first with the <i>superpowers</i> skills: <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/superpowers/specs/2026-11-15-vector-short-design.md">design</a> → <a href="https://github.com/rifaterdemsahin/google-flow-vectors/blob/main/docs/superpowers/plans/2026-11-15-vector-short.md">plan</a> → execution.</p>
 </main></body></html>

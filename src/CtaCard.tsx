@@ -1,37 +1,36 @@
 import { AbsoluteFill, Img, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { CTA_DISPLAY_URL, CTA_LOGO, CTA_SUB, CTA_TEXT } from './layout';
 
+/** Full-frame, focused end screen: dimmed backdrop, big logo, one message, one URL. */
 export const CtaCard = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const pop = spring({ frame, fps, config: { damping: 13, stiffness: 140 } });
+  const pop = spring({ frame, fps, config: { damping: 13, stiffness: 150 } });
   return (
-    // Upper area, clear of the captions (lower) and the burned-in lower thirds (bottom).
-    <AbsoluteFill style={{ top: '12%', height: '24%', justifyContent: 'center', alignItems: 'center' }}>
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
       <div
         style={{
-          width: 940,
-          padding: '28px 36px',
+          width: 900,
+          padding: '60px 48px',
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
-          gap: 28,
-          textAlign: 'left',
-          borderRadius: 36,
-          background: 'linear-gradient(135deg, rgba(20,24,38,0.92), rgba(60,20,90,0.92))',
-          border: '3px solid #FFD54A',
-          boxShadow: '0 12px 50px rgba(0,0,0,0.6), 0 0 40px rgba(255,213,74,0.35)',
+          gap: 30,
+          textAlign: 'center',
+          borderRadius: 48,
+          background: 'linear-gradient(160deg, rgba(20,24,38,0.95), rgba(60,20,90,0.95))',
+          border: '4px solid #FFD54A',
+          boxShadow: '0 16px 70px rgba(0,0,0,0.7), 0 0 60px rgba(255,213,74,0.4)',
           fontFamily: 'Inter, "Helvetica Neue", Arial, sans-serif',
           color: '#fff',
           transform: `scale(${0.85 + 0.15 * pop})`,
           opacity: Math.min(1, pop * 1.4),
         }}
       >
-        <Img src={staticFile(CTA_LOGO)} style={{ width: 190, height: 190, borderRadius: '50%', flexShrink: 0 }} />
-        <div>
-          <div style={{ fontSize: 50, fontWeight: 900, lineHeight: 1.1 }}>{CTA_TEXT}</div>
-          <div style={{ fontSize: 38, fontWeight: 700, color: '#FFD54A', marginTop: 8 }}>{CTA_SUB}</div>
-          <div style={{ fontSize: 34, fontWeight: 600, marginTop: 8, opacity: 0.95 }}>{CTA_DISPLAY_URL}</div>
-        </div>
+        <Img src={staticFile(CTA_LOGO)} style={{ width: 340, height: 340, borderRadius: '50%' }} />
+        <div style={{ fontSize: 74, fontWeight: 900, lineHeight: 1.08 }}>{CTA_TEXT}</div>
+        <div style={{ fontSize: 52, fontWeight: 700, color: '#FFD54A' }}>{CTA_SUB}</div>
+        <div style={{ fontSize: 44, fontWeight: 600, opacity: 0.95 }}>{CTA_DISPLAY_URL}</div>
       </div>
     </AbsoluteFill>
   );

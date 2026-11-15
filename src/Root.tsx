@@ -1,6 +1,7 @@
 import { Composition } from 'remotion';
 import { Short } from './Short';
-import { FPS, SCENES, SCENE_FRAMES } from './script';
+import { TOTAL_FRAMES } from './layout';
+import { FPS } from './script';
 
 export const Root = () => (
   <Composition
@@ -9,6 +10,6 @@ export const Root = () => (
     width={1080}
     height={1920}
     fps={FPS}
-    durationInFrames={SCENES.length * SCENE_FRAMES}
+    durationInFrames={TOTAL_FRAMES}
   />
 );
